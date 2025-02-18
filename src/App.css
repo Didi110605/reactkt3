@@ -1,0 +1,40 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Установить расстояние между карточками */
+}
+
+.list-item {
+  flex: 1 1 30%; /* Карточка занимает 30% ширины контейнера */
+  box-sizing: border-box; /* Включает padding и border в ширину и высоту */
+  margin: 10px;
+  max-width: 30%;
+}
+
+@media (max-width: 900px) {
+  .list-item {
+    flex: 1 1 45%; /* На меньшем экране 2 карточки в ряду */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .list-item {
+    flex: 1 1 100%; /* На совсем малом экране 1 карточка в ряду */
+    max-width: 100%;
+  }
+}
+.active {
+  color: orange;
+}
+.footer{
+  text-align: center;
+  height: 100px;
+  background-color: aquamarine;
+}
+.header{
+height: 100px;
+text-align: center;
+background-color: aquamarine;
+}
+
